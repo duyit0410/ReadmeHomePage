@@ -51,7 +51,7 @@ export const SIZE_ICON = 60
 
 ## Calculate value (value depend on hard value and hard value depend on checkpoint)
 
-- **Padding:**: Flow calculate: padding -> itemWidth
+- **Padding:** Flow calculate: padding -> itemWidth
 
   - factor: hard data to calculate padding
 
@@ -69,3 +69,5 @@ const calculateGridDimensions = (screenWidth: number, columns: number) => {
   }
 }
 ```
+
+- **After have itemWith:** can calculate all remain value (itemHeight, rowsNumber)
