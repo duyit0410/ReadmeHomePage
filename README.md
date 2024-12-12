@@ -1,15 +1,16 @@
 # Hard data by checkpoint
+
 - **Device**: Detect device
   ```js
-export enum Device {
+  export enum Device {
   MOBILE = 'MOBILE',
   TABLET = 'TABLET',
   DESKTOP = 'DESKTOP'
-}
-export const CHECKPOINT_DEVICE: Record<number, Device> = {
+  }
+  export const CHECKPOINT_DEVICE: Record<number, Device> = {
   768: Device.TABLET,
   1024: Device.DESKTOP
-}
+  }
   ```
 - **Column**: Total column layout depend on screen (section center)
   ```js
