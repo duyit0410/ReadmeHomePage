@@ -1,4 +1,4 @@
-# Hard data by checkpoint
+## **Hard data** by checkpoint
 
 - **Device**: Detect device
   ```js
@@ -40,3 +40,5 @@
   1024: 1024
   }
   ```
+
+## Calculate value (remain valud)
