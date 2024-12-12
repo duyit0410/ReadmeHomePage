@@ -1,4 +1,12 @@
-## Hard value (Base value will set manual)
+## Hard value
+
+```js
+export const HEIGHT_DOCK = 120
+export const HEIGHT_PAGINATION = 40
+export const SIZE_ICON = 60
+```
+
+## Hard value depend on checkpoint (set manual)
 
 - **Device:** Detect device
   ```js
@@ -41,21 +49,23 @@
   }
   ```
 
-## Calculate value (value depend on hard value)
+## Calculate value (value depend on hard value and hard value depend on checkpoint)
 
 - **Padding:**: Flow calculate: padding -> itemWidth
 
   - factor: hard data to calculate padding
 
 ```js
-    const calculateGridDimensions = (screenWidth: number, columns: number) => {
-    const factor = 20 // Adjusted based on user experience
-    const outerPadding = screenWidth / (columns * factor)
-    const gridGap = outerPadding // Gap between grid items
-    const totalPadding = outerPadding * 2 + gridGap * (columns - 1)
-    const itemWidth = (screenWidth - totalPadding) / columns
-    return {
+const calculateGridDimensions = (screenWidth: number, columns: number) => {
+  const factor = 20 // Adjusted based on user experience
+  const outerPadding = screenWidth / (columns * factor)
+  const gridGap = outerPadding // Gap between grid items
+  const totalPadding = outerPadding * 2 + gridGap * (columns - 1)
+  const itemWidth = (screenWidth - totalPadding) / columns
+
+  return {
     itemWidth,
     outerPadding: totalPadding / 2 // Padding per side
-    }
+  }
+}
 ```
