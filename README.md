@@ -1,6 +1,6 @@
-## Hard data by checkpoint
+# Hard data by checkpoint
 
-- # Column: Total column layout depend on screen (section center)
+- ## Column: Total column layout depend on screen (section center)
   ```js
   export const CHECKPOINT_COLUMN: Record<number, number> = {
   768: 4,
